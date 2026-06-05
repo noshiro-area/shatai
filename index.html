@@ -251,16 +251,109 @@
                 <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSmQwUkMbgOtk-i5nCZTJwypYcNeZT4Tt6psaBv6I2tEru-TGkfQ-NMZOH-yY7a2qOfyIryzj1lC-YK/pubhtml?gid=1466762783&single=true" class="w-full h-[450px] sm:h-[550px]" loading="lazy"></iframe>
             </div>
 
-            <!-- 得点に関する注記 -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6 text-xs text-slate-500 leading-relaxed bg-slate-50 p-4 rounded-xl">
-                <div>
-                    <strong class="text-slate-800 block mb-1"><i class="fa-solid fa-star text-amber-500"></i> 得点システムについて</strong>
-                    得点競技（大縄跳び、滴水リレー、綱引き、男女各分団対抗リレー）で獲得した順位ポイントが加算されます。<br>
-                    【得点配分】 1位: 10点 | 2位: 8点 | 3位: 5点 | 4位: 4点 | 5位: 3点 | 6位: 2点 | 7位: 1点
+            <!-- 得点に関する注記：テーブル形式 -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-6">
+                <!-- 得点表 -->
+                <div class="bg-amber-100/30 rounded-xl border border-amber-200 overflow-hidden shadow-sm">
+                    <h4 class="bg-amber-500 text-white font-bold px-4 py-2 text-sm flex items-center gap-2">
+                        <i class="fa-solid fa-play text-xs"></i> 得点表
+                    </h4>
+                    <div class="p-2 sm:p-4 overflow-x-auto">
+                        <table class="w-full text-xs text-slate-700 whitespace-nowrap text-center bg-white border-collapse">
+                            <thead class="bg-amber-50 font-bold border-b-2 border-amber-200">
+                                <tr>
+                                    <th class="border border-slate-200 px-3 py-2">順位</th>
+                                    <th class="border border-slate-200 px-3 py-2">得点競技</th>
+                                    <th class="border border-slate-200 px-3 py-2">綱引き</th>
+                                    <th class="border border-slate-200 px-3 py-2">リレー</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td class="border border-slate-200 px-3 py-1.5 font-bold">1</td><td class="border border-slate-200 px-3 py-1.5">7点</td><td class="border border-slate-200 px-3 py-1.5">10点</td><td class="border border-slate-200 px-3 py-1.5">10点</td></tr>
+                                <tr><td class="border border-slate-200 px-3 py-1.5 font-bold">2</td><td class="border border-slate-200 px-3 py-1.5">6点</td><td class="border border-slate-200 px-3 py-1.5">8点</td><td class="border border-slate-200 px-3 py-1.5">8点</td></tr>
+                                <tr><td class="border border-slate-200 px-3 py-1.5 font-bold">3</td><td class="border border-slate-200 px-3 py-1.5">5点</td><td class="border border-slate-200 px-3 py-1.5">6点</td><td class="border border-slate-200 px-3 py-1.5">6点</td></tr>
+                                <tr><td class="border border-slate-200 px-3 py-1.5 font-bold">4</td><td class="border border-slate-200 px-3 py-1.5">4点</td><td class="border border-slate-200 px-3 py-1.5">4点</td><td class="border border-slate-200 px-3 py-1.5">4点</td></tr>
+                                <tr><td class="border border-slate-200 px-3 py-1.5 font-bold">5</td><td class="border border-slate-200 px-3 py-1.5">3点</td><td class="border border-slate-200 px-3 py-1.5">3点</td><td class="border border-slate-200 px-3 py-1.5">3点</td></tr>
+                                <tr><td class="border border-slate-200 px-3 py-1.5 font-bold">6</td><td class="border border-slate-200 px-3 py-1.5">2点</td><td class="border border-slate-200 px-3 py-1.5">2点</td><td class="border border-slate-200 px-3 py-1.5">2点</td></tr>
+                                <tr><td class="border border-slate-200 px-3 py-1.5 font-bold">7</td><td class="border border-slate-200 px-3 py-1.5">1点</td><td class="border border-slate-200 px-3 py-1.5">1点</td><td class="border border-slate-200 px-3 py-1.5">1点</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
-                <div>
-                    <strong class="text-slate-800 block mb-1"><i class="fa-solid fa-rotate"></i> 過去イベント（ボウリング・ニュースポーツ）の経過小計反映中</strong>
-                    現在の経過小計には、「ボウリング大会」「ニュースポーツ大会」での獲得得点があらかじめ加算されています。本日の体育大会の結果を合わせて最終総合順位が決定します。
+
+                <!-- 総合成績 -->
+                <div class="bg-amber-100/30 rounded-xl border border-amber-200 overflow-hidden shadow-sm">
+                    <h4 class="bg-amber-500 text-white font-bold px-4 py-2 text-sm flex items-center gap-2">
+                        <i class="fa-solid fa-play text-xs"></i> 令和8年度 苗代校下スポーツ大会 総合成績（経過）
+                    </h4>
+                    <div class="p-2 sm:p-4 overflow-x-auto">
+                        <table class="w-full text-xs text-slate-700 whitespace-nowrap text-center bg-white border-collapse">
+                            <thead class="bg-amber-50 font-bold border-b-2 border-amber-200">
+                                <tr>
+                                    <th class="border border-slate-200 px-1 sm:px-2 py-2 font-normal"></th>
+                                    <th class="border border-slate-200 px-1 sm:px-2 py-2 font-bold">大領</th>
+                                    <th class="border border-slate-200 px-1 sm:px-2 py-2 font-bold">千木野</th>
+                                    <th class="border border-slate-200 px-1 sm:px-2 py-2 font-bold">南浅井</th>
+                                    <th class="border border-slate-200 px-1 sm:px-2 py-2 font-bold text-[10px] leading-tight">不動島<br>・清六</th>
+                                    <th class="border border-slate-200 px-1 sm:px-2 py-2 font-bold">吉竹</th>
+                                    <th class="border border-slate-200 px-1 sm:px-2 py-2 font-bold">北浅井</th>
+                                    <th class="border border-slate-200 px-1 sm:px-2 py-2 font-bold">扇</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="border border-slate-200 px-1 sm:px-2 py-1.5 text-left whitespace-normal min-w-[120px]"><span class="text-[9px] text-slate-500">令和7年度</span><br>ボウリング</td>
+                                    <td class="border border-slate-200 px-1 sm:px-2 py-1.5">4</td>
+                                    <td class="border border-slate-200 px-1 sm:px-2 py-1.5">5</td>
+                                    <td class="border border-slate-200 px-1 sm:px-2 py-1.5">7</td>
+                                    <td class="border border-slate-200 px-1 sm:px-2 py-1.5">1</td>
+                                    <td class="border border-slate-200 px-1 sm:px-2 py-1.5">2</td>
+                                    <td class="border border-slate-200 px-1 sm:px-2 py-1.5">6</td>
+                                    <td class="border border-slate-200 px-1 sm:px-2 py-1.5">3</td>
+                                </tr>
+                                <tr>
+                                    <td class="border border-slate-200 px-1 sm:px-2 py-1.5 text-left whitespace-normal min-w-[120px]"><span class="text-[9px] text-slate-500">令和7年度</span><br>ニュースポーツ</td>
+                                    <td class="border border-slate-200 px-1 sm:px-2 py-1.5">4</td>
+                                    <td class="border border-slate-200 px-1 sm:px-2 py-1.5">6</td>
+                                    <td class="border border-slate-200 px-1 sm:px-2 py-1.5">6</td>
+                                    <td class="border border-slate-200 px-1 sm:px-2 py-1.5">1</td>
+                                    <td class="border border-slate-200 px-1 sm:px-2 py-1.5">4</td>
+                                    <td class="border border-slate-200 px-1 sm:px-2 py-1.5">2</td>
+                                    <td class="border border-slate-200 px-1 sm:px-2 py-1.5">7</td>
+                                </tr>
+                                <tr class="bg-amber-50 border-t-2 border-amber-200">
+                                    <td class="border border-slate-200 px-1 sm:px-2 py-1.5 text-center font-bold">（経過小計）</td>
+                                    <td class="border border-slate-200 px-1 sm:px-2 py-1.5 font-bold text-amber-700">8</td>
+                                    <td class="border border-slate-200 px-1 sm:px-2 py-1.5 font-bold text-amber-700">11</td>
+                                    <td class="border border-slate-200 px-1 sm:px-2 py-1.5 font-bold text-red-600">13</td>
+                                    <td class="border border-slate-200 px-1 sm:px-2 py-1.5 font-bold text-amber-700">2</td>
+                                    <td class="border border-slate-200 px-1 sm:px-2 py-1.5 font-bold text-amber-700">6</td>
+                                    <td class="border border-slate-200 px-1 sm:px-2 py-1.5 font-bold text-amber-700">8</td>
+                                    <td class="border border-slate-200 px-1 sm:px-2 py-1.5 font-bold text-amber-700">10</td>
+                                </tr>
+                                <tr>
+                                    <td class="border border-slate-200 px-1 sm:px-2 py-1.5 text-left whitespace-normal min-w-[120px]"><span class="text-[9px] text-slate-500">令和8年度</span><br>社会体育大会</td>
+                                    <td class="border border-slate-200 px-1 sm:px-2 py-1.5 text-slate-300">-</td>
+                                    <td class="border border-slate-200 px-1 sm:px-2 py-1.5 text-slate-300">-</td>
+                                    <td class="border border-slate-200 px-1 sm:px-2 py-1.5 text-slate-300">-</td>
+                                    <td class="border border-slate-200 px-1 sm:px-2 py-1.5 text-slate-300">-</td>
+                                    <td class="border border-slate-200 px-1 sm:px-2 py-1.5 text-slate-300">-</td>
+                                    <td class="border border-slate-200 px-1 sm:px-2 py-1.5 text-slate-300">-</td>
+                                    <td class="border border-slate-200 px-1 sm:px-2 py-1.5 text-slate-300">-</td>
+                                </tr>
+                                <tr class="bg-amber-100 font-bold border-t-2 border-amber-300">
+                                    <td class="border border-slate-200 px-1 sm:px-2 py-2 text-center text-sm">総合得点※</td>
+                                    <td class="border border-slate-200 px-1 sm:px-2 py-2"></td>
+                                    <td class="border border-slate-200 px-1 sm:px-2 py-2"></td>
+                                    <td class="border border-slate-200 px-1 sm:px-2 py-2"></td>
+                                    <td class="border border-slate-200 px-1 sm:px-2 py-2"></td>
+                                    <td class="border border-slate-200 px-1 sm:px-2 py-2"></td>
+                                    <td class="border border-slate-200 px-1 sm:px-2 py-2"></td>
+                                    <td class="border border-slate-200 px-1 sm:px-2 py-2"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
         </div>
@@ -283,7 +376,7 @@
                 </div>
                 <h4 class="font-black text-slate-800 text-sm">大領</h4>
                 <div class="mt-2 text-[10px] text-slate-400">
-                    <span class="block">各団担当：浦川 剛</span>
+                    <span class="block">団長：浦川 剛</span>
                     <span class="block text-blue-600 font-bold mt-1">青色</span>
                 </div>
             </div>
@@ -295,7 +388,7 @@
                 </div>
                 <h4 class="font-black text-slate-800 text-sm">千木野</h4>
                 <div class="mt-2 text-[10px] text-slate-400">
-                    <span class="block">各団担当：皆川 康志</span>
+                    <span class="block">団長：皆川 康志</span>
                     <span class="block text-red-600 font-bold mt-1">赤色</span>
                 </div>
             </div>
@@ -307,7 +400,7 @@
                 </div>
                 <h4 class="font-black text-slate-800 text-sm">南浅井</h4>
                 <div class="mt-2 text-[10px] text-slate-400">
-                    <span class="block">各団担当：北本 浩章</span>
+                    <span class="block">団長：北本 浩章</span>
                     <span class="block text-green-600 font-bold mt-1">緑色</span>
                 </div>
             </div>
@@ -319,7 +412,7 @@
                 </div>
                 <h4 class="font-black text-slate-800 text-sm">不動島・清六</h4>
                 <div class="mt-2 text-[10px] text-slate-400">
-                    <span class="block">各団担当：前山 英樹</span>
+                    <span class="block">団長：前山 英樹</span>
                     <span class="block text-purple-600 font-bold mt-1">紫色</span>
                 </div>
             </div>
@@ -331,7 +424,7 @@
                 </div>
                 <h4 class="font-black text-slate-800 text-sm">吉竹</h4>
                 <div class="mt-2 text-[10px] text-slate-400">
-                    <span class="block">各団担当：亀田 亮臣</span>
+                    <span class="block">団長：亀田 亮臣</span>
                     <span class="block text-slate-600 font-bold mt-1">白色</span>
                 </div>
             </div>
@@ -343,7 +436,7 @@
                 </div>
                 <h4 class="font-black text-slate-800 text-sm">扇</h4>
                 <div class="mt-2 text-[10px] text-slate-400">
-                    <span class="block">各団担当：栗田 誠一郎</span>
+                    <span class="block">団長：栗田 誠一郎</span>
                     <span class="block text-pink-500 font-bold mt-1">桃色</span>
                 </div>
             </div>
@@ -355,7 +448,7 @@
                 </div>
                 <h4 class="font-black text-slate-800 text-sm">北浅井</h4>
                 <div class="mt-2 text-[10px] text-slate-400">
-                    <span class="block">各団担当：角 喜幸</span>
+                    <span class="block">団長：角 喜幸</span>
                     <span class="block text-yellow-500 font-bold mt-1">黄色</span>
                 </div>
             </div>
@@ -481,30 +574,30 @@
                 </div>
 
                 <!-- 7. ボール蹴り競争 -->
-                <div class="bg-white rounded-2xl p-5 sm:p-6 border border-slate-200 shadow-sm flex items-start gap-4 hover:border-slate-300 transition-all">
-                    <div class="bg-sports-accent text-slate-900 py-2 px-3 rounded-xl flex flex-col items-center justify-center min-w-[75px] font-black shrink-0 text-center shadow">
-                        <span class="text-[9px] text-teal-800 tracking-wider">No. 07</span>
-                        <span class="text-sm sm:text-base">競技</span>
+                <div class="bg-gradient-to-r from-orange-50 to-amber-50 rounded-2xl p-5 sm:p-6 border border-orange-200 shadow-sm flex items-start gap-4 hover:border-orange-300 transition-all">
+                    <div class="bg-sports-brand text-white py-2 px-3 rounded-xl flex flex-col items-center justify-center min-w-[75px] font-black shrink-0 text-center shadow-md">
+                        <span class="text-[9px] text-orange-200 tracking-wider">No. 07</span>
+                        <span class="text-sm sm:text-base">得点</span>
                     </div>
                     <div class="flex-grow">
-                        <span class="bg-emerald-100 text-emerald-800 text-[10px] px-2 py-0.5 rounded font-black">オープン</span>
-                        <h4 class="text-base sm:text-lg font-black text-sports-blue mt-1">ボール蹴り競争</h4>
-                        <p class="text-xs sm:text-sm text-slate-500 mt-1">
+                        <span class="bg-sports-brand text-white text-[10px] px-2.5 py-0.5 rounded font-black">★ 得点競技</span>
+                        <h4 class="text-base sm:text-lg font-black text-sports-blue mt-1.5">ボール蹴り競争</h4>
+                        <p class="text-xs sm:text-sm text-slate-600 mt-1">
                             【出場者】各団 8名（男女問わず）
                         </p>
                     </div>
                 </div>
 
                 <!-- 8 & 9. 玉入れ・お玉でピンポン球リレー -->
-                <div class="bg-white rounded-2xl p-5 sm:p-6 border border-slate-200 shadow-sm flex items-start gap-4 hover:border-slate-300 transition-all">
-                    <div class="bg-sports-accent text-slate-900 py-2 px-3 rounded-xl flex flex-col items-center justify-center min-w-[75px] font-black shrink-0 text-center shadow">
-                        <span class="text-[9px] text-teal-800 tracking-wider">No.08,09</span>
-                        <span class="text-sm sm:text-base">競技</span>
+                <div class="bg-gradient-to-r from-orange-50 to-amber-50 rounded-2xl p-5 sm:p-6 border border-orange-200 shadow-sm flex items-start gap-4 hover:border-orange-300 transition-all">
+                    <div class="bg-sports-brand text-white py-2 px-3 rounded-xl flex flex-col items-center justify-center min-w-[75px] font-black shrink-0 text-center shadow-md">
+                        <span class="text-[9px] text-orange-200 tracking-wider">No.08,09</span>
+                        <span class="text-sm sm:text-base">得点</span>
                     </div>
                     <div class="flex-grow">
-                        <span class="bg-emerald-100 text-emerald-800 text-[10px] px-2 py-0.5 rounded font-black">オープン</span>
-                        <h4 class="text-base sm:text-lg font-black text-sports-blue mt-1">玉入れ ／ お玉でピンポン球リレー</h4>
-                        <p class="text-xs sm:text-sm text-slate-500 mt-1 leading-relaxed">
+                        <span class="bg-sports-brand text-white text-[10px] px-2.5 py-0.5 rounded font-black">★ 得点競技</span>
+                        <h4 class="text-base sm:text-lg font-black text-sports-blue mt-1.5">玉入れ ／ お玉でピンポン球リレー</h4>
+                        <p class="text-xs sm:text-sm text-slate-600 mt-1 leading-relaxed">
                             【玉入れ出場者】各団 男女各10名（うち60歳以上2名含む）<br>
                             【ピンポンリレー出場者】各団 50歳以上 男子3名・女子3名、小学生3名
                         </p>
@@ -601,74 +694,73 @@
                         </div>
 
                         <!-- 簡易マップエミュレーション -->
-                        <div class="overflow-x-auto rounded-2xl border border-slate-800 bg-emerald-950 p-4">
-                            <div class="min-w-[650px] aspect-[16/10] relative border-4 border-dashed border-white/20 rounded-xl bg-gradient-to-b from-emerald-800 to-emerald-900 flex flex-col justify-between p-6 overflow-hidden">
+                        <div class="overflow-x-auto rounded-2xl border border-slate-800 bg-emerald-950 p-2 sm:p-4">
+                            <div class="min-w-[340px] sm:min-w-[650px] aspect-[4/3] sm:aspect-[16/10] relative border-2 sm:border-4 border-dashed border-white/20 rounded-xl bg-gradient-to-b from-emerald-800 to-emerald-900 flex flex-col justify-between p-3 sm:p-6 overflow-hidden">
                                 
-                                <!-- 本部・上側エリア (PDF: トイレ / 用具小屋 / 用具 / 国旗掲揚台 / 景品 / 記録 / 本部・救護 / 来賓) -->
+                                <!-- 本部・上側エリア -->
                                 <div class="w-full flex justify-between items-start gap-1">
                                     <!-- トイレ（左上） -->
-                                    <div class="bg-slate-750 text-white text-[10px] px-2 py-1 rounded border border-white/10 flex items-center gap-1">
-                                        <i class="fa-solid fa-restroom"></i> トイレ
+                                    <div class="bg-slate-750 text-white text-[8px] sm:text-[10px] px-1.5 sm:px-2 py-0.5 sm:py-1 rounded border border-white/10 flex items-center gap-1">
+                                        <i class="fa-solid fa-restroom"></i><span class="hidden sm:inline">トイレ</span>
                                     </div>
-                                    <div class="flex gap-1">
-                                        <div class="bg-emerald-700 text-white text-[10px] px-2 py-1 rounded border border-white/10">用具小屋</div>
-                                        <div class="bg-emerald-700 text-white text-[10px] px-2 py-1 rounded border border-white/10">用具</div>
-                                        <div class="bg-slate-750 text-white text-[10px] px-2 py-1 rounded border border-white/10">国旗掲揚台</div>
+                                    <div class="flex gap-0.5 sm:gap-1">
+                                        <div class="bg-emerald-700 text-white text-[8px] sm:text-[10px] px-1 sm:px-2 py-0.5 sm:py-1 rounded border border-white/10">用具</div>
+                                        <div class="bg-emerald-700 text-white text-[8px] sm:text-[10px] px-1 sm:px-2 py-0.5 sm:py-1 rounded border border-white/10">小屋</div>
+                                        <div class="bg-slate-750 text-white text-[8px] sm:text-[10px] px-1 sm:px-2 py-0.5 sm:py-1 rounded border border-white/10">国旗</div>
                                     </div>
                                     <!-- 入口（右上） -->
-                                    <div class="bg-yellow-600 text-white text-[10px] px-2 py-1 rounded font-bold">
-                                        ← 入口
+                                    <div class="bg-yellow-600 text-white text-[8px] sm:text-[10px] px-1.5 sm:px-2 py-0.5 sm:py-1 rounded font-bold">
+                                        ←<span class="hidden sm:inline"> 入口</span>
                                     </div>
                                 </div>
 
                                 <!-- 本部系テントライン -->
-                                <div class="w-full flex justify-center gap-2 -mt-4">
-                                    <div class="bg-blue-900 text-white text-[10px] font-bold px-3 py-1.5 rounded-lg border border-white/20 shadow">景品</div>
-                                    <div class="bg-blue-900 text-white text-[10px] font-bold px-3 py-1.5 rounded-lg border border-white/20 shadow">記録</div>
-                                    <div class="bg-red-700 text-white text-[10px] font-black px-3 py-1.5 rounded-lg border border-white/20 shadow">本部・救護</div>
-                                    <div class="bg-blue-900 text-white text-[10px] font-bold px-3 py-1.5 rounded-lg border border-white/20 shadow">来賓</div>
+                                <div class="w-full flex justify-center gap-1 sm:gap-2 -mt-2 sm:-mt-4">
+                                    <div class="bg-blue-900 text-white text-[9px] sm:text-[10px] font-bold px-1.5 sm:px-3 py-1 sm:py-1.5 rounded-lg border border-white/20 shadow">景品</div>
+                                    <div class="bg-blue-900 text-white text-[9px] sm:text-[10px] font-bold px-1.5 sm:px-3 py-1 sm:py-1.5 rounded-lg border border-white/20 shadow">記録</div>
+                                    <div class="bg-red-700 text-white text-[9px] sm:text-[10px] font-black px-1.5 sm:px-3 py-1 sm:py-1.5 rounded-lg border border-white/20 shadow">本部・救護</div>
+                                    <div class="bg-blue-900 text-white text-[9px] sm:text-[10px] font-bold px-1.5 sm:px-3 py-1 sm:py-1.5 rounded-lg border border-white/20 shadow">来賓</div>
                                 </div>
 
                                 <!-- トラックエリアと左右の町内テント -->
-                                <div class="w-full flex justify-between items-center my-2">
+                                <div class="w-full flex justify-between items-center my-1 sm:my-2">
                                     <!-- 左側 -->
-                                    <div class="flex flex-col gap-2">
-                                        <div class="bg-yellow-400 text-slate-900 text-xs font-black px-3 py-2 rounded-xl text-center shadow-md">
-                                            北浅井 (黄)
+                                    <div class="flex flex-col gap-1.5 sm:gap-2">
+                                        <div class="bg-yellow-400 text-slate-900 text-[10px] sm:text-xs font-black px-2 sm:px-3 py-1 sm:py-2 rounded-lg sm:rounded-xl text-center shadow-md">
+                                            北浅井<span class="hidden sm:inline"> (黄)</span>
                                         </div>
-                                        <div class="bg-slate-100 text-slate-800 text-xs font-black px-3 py-2 rounded-xl text-center shadow-md border border-slate-300">
-                                            吉竹 (白)
+                                        <div class="bg-slate-100 text-slate-800 text-[10px] sm:text-xs font-black px-2 sm:px-3 py-1 sm:py-2 rounded-lg sm:rounded-xl text-center shadow-md border border-slate-300">
+                                            吉竹<span class="hidden sm:inline"> (白)</span>
                                         </div>
-                                        <div class="text-[9px] text-slate-400 pl-1">← 道路・喫煙所方面</div>
+                                        <div class="text-[8px] sm:text-[9px] text-slate-400 pl-1 -mt-1 hidden sm:block">← 道路・喫煙所方面</div>
                                     </div>
 
                                     <!-- 中央トラック -->
-                                    <div class="w-2/5 h-20 border-4 border-white/20 rounded-[100px] flex items-center justify-center">
-                                        <span class="text-white/10 font-bold text-sm tracking-wider">TRACK</span>
+                                    <div class="w-2/5 h-12 sm:h-20 border-2 sm:border-4 border-white/20 rounded-[100px] flex items-center justify-center">
+                                        <span class="text-white/10 font-bold text-[10px] sm:text-sm tracking-wider">TRACK</span>
                                     </div>
 
                                     <!-- 右側 -->
-                                    <div class="flex flex-col gap-2">
-                                        <div class="bg-green-600 text-white text-xs font-black px-3 py-2 rounded-xl text-center shadow-md">
-                                            南浅井 (緑)
+                                    <div class="flex flex-col gap-1.5 sm:gap-2">
+                                        <div class="bg-green-600 text-white text-[10px] sm:text-xs font-black px-2 sm:px-3 py-1 sm:py-2 rounded-lg sm:rounded-xl text-center shadow-md">
+                                            南浅井<span class="hidden sm:inline"> (緑)</span>
                                         </div>
-                                        <div class="bg-blue-600 text-white text-xs font-black px-3 py-2 rounded-xl text-center shadow-md">
-                                            大領 (青)
+                                        <div class="bg-blue-600 text-white text-[10px] sm:text-xs font-black px-2 sm:px-3 py-1 sm:py-2 rounded-lg sm:rounded-xl text-center shadow-md">
+                                            大領<span class="hidden sm:inline"> (青)</span>
                                         </div>
                                     </div>
                                 </div>
 
                                 <!-- 下側 -->
                                 <div class="w-full flex justify-around items-end">
-                                    <div class="bg-purple-600 text-white text-xs font-black px-3 py-2 rounded-xl text-center shadow-md">
-                                        不動島・清六 (紫)<br>
-                                        <span class="text-[9px] font-normal text-purple-200">(バックネット裏)</span>
+                                    <div class="bg-purple-600 text-white text-[10px] sm:text-xs font-black px-2 sm:px-3 py-1 sm:py-2 rounded-lg sm:rounded-xl text-center shadow-md">
+                                        不動島<span class="hidden sm:inline">・清六 (紫)</span>
                                     </div>
-                                    <div class="bg-pink-500 text-white text-xs font-black px-3 py-2 rounded-xl text-center shadow-md">
-                                        扇 (桃)
+                                    <div class="bg-pink-500 text-white text-[10px] sm:text-xs font-black px-2 sm:px-3 py-1 sm:py-2 rounded-lg sm:rounded-xl text-center shadow-md">
+                                        扇<span class="hidden sm:inline"> (桃)</span>
                                     </div>
-                                    <div class="bg-red-600 text-white text-xs font-black px-3 py-2 rounded-xl text-center shadow-md">
-                                        千木野 (赤)
+                                    <div class="bg-red-600 text-white text-[10px] sm:text-xs font-black px-2 sm:px-3 py-1 sm:py-2 rounded-lg sm:rounded-xl text-center shadow-md">
+                                        千木野<span class="hidden sm:inline"> (赤)</span>
                                     </div>
                                 </div>
 
@@ -701,7 +793,7 @@
                                 </p>
                                 <p class="flex items-start gap-1">
                                     <span class="text-sports-brand font-bold">2.</span>
-                                    <span><strong>校舎・講堂トイレ</strong>（上靴要）</span>
+                                    <span><strong>ピーチクパーチク館トイレ</strong></span>
                                 </p>
                             </div>
                         </div>
@@ -737,116 +829,42 @@
     <section id="toilet" class="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
         <div class="text-center mb-12 fade-in">
             <span class="text-xs font-black text-sports-brand tracking-widest uppercase bg-sports-brand/10 px-3 py-1 rounded-full">TOILET GUIDE</span>
-            <h3 class="text-3xl font-black text-sports-blue mt-3">講堂内トイレへの詳細ルート</h3>
-            <p class="text-sm text-slate-500 mt-2">運動場（グラウンド）から、一番近くて綺麗な「講堂（体育館）内水洗トイレ」までの行き方をステップ順にご案内します。</p>
+            <h3 class="text-3xl font-black text-sports-blue mt-3">ピーチクパーチク館トイレへの詳細ルート</h3>
+            <p class="text-sm text-slate-500 mt-2">運動場（グラウンド）から、一番近くて綺麗な「ピーチクパーチク館内水洗トイレ」までの行き方をステップ順にご案内します。</p>
             <div class="w-12 h-1 bg-sports-brand mx-auto mt-4 rounded-full"></div>
         </div>
 
         <!-- 3ステップの写真＋テキスト道順案内 -->
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch fade-in">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 fade-in">
             
             <!-- STEP 1 (写真1) -->
-            <div class="bg-white rounded-3xl border border-slate-200 overflow-hidden shadow-sm flex flex-col justify-between group hover:border-sports-brand transition-all duration-300 transform hover:-translate-y-1">
-                <div class="relative aspect-[4/3] bg-slate-900 flex items-center justify-center overflow-hidden">
-                    <!-- 画像タグ（お持ちの道順写真のパスに差し替え可能です。現在はスタイリッシュな仮イメージを表示中） -->
-                    <img src="https://images.unsplash.com/photo-1585776245991-cf89dd7fc73a?q=80&w=600&auto=format&fit=crop" 
-                         alt="ぴーちくぱーちく館入口への道順" 
-                         class="absolute inset-0 w-full h-full object-cover opacity-65 group-hover:scale-105 transition-transform duration-500"
-                         onerror="this.style.display='none';">
-                    
-                    <!-- フォールバック用グラフィック（画像が表示されなかった場合の枠） -->
-                    <div class="absolute inset-0 bg-slate-950/60 flex flex-col items-center justify-center p-4 text-center pointer-events-none">
-                        <div class="w-12 h-12 rounded-full bg-sports-brand text-white flex items-center justify-center mb-2 shadow-lg">
-                            <span class="font-extrabold text-lg">1</span>
-                        </div>
-                        <span class="text-[10px] text-slate-400 font-bold block tracking-wider">PHOTO 01</span>
-                        <p class="text-sm font-bold text-white mt-1">校舎・ぴーちくぱーちく館入口</p>
-                    </div>
-                    
-                    <div class="absolute top-3 left-3 bg-sports-brand text-white text-[10px] font-black px-2.5 py-1 rounded-full shadow">
-                        ステップ 1
-                    </div>
+            <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-4">
+                <span class="inline-block bg-sports-brand text-white text-xs font-bold px-2 py-1 rounded mb-3">ステップ 1</span>
+                <div class="aspect-[4/3] bg-slate-100 rounded-lg overflow-hidden mb-4 border border-slate-200">
+                    <img src="step_1.JPG" alt="STEP 1" class="w-full h-full object-cover">
                 </div>
-                <div class="p-6 flex-grow flex flex-col justify-between">
-                    <div>
-                        <h4 class="font-black text-slate-800 text-base mb-2">① 校舎（ぴーちくぱーちく館）入口へ</h4>
-                        <p class="text-xs sm:text-sm text-slate-500 leading-relaxed">
-                            運動場左上奥（本部テントの左方向、バックネット裏の奥付近）に進むと、校舎に繋がる「ぴーちくぱーちく館」の玄関口が見えます。こちらから中へお入りください。
-                        </p>
-                    </div>
-                    <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs text-sports-brand font-black">
-                        <span>道順：運動場から建物内へ</span>
-                        <i class="fa-solid fa-arrow-right"></i>
-                    </div>
-                </div>
+                <h4 class="font-bold text-slate-800 text-[15px] mb-2">① グラウンドを出て右に曲がる</h4>
+                <p class="text-xs text-slate-500">運動場から道路へ出て、校舎（ぴーちくぱーちく館）方面へ進みます。</p>
             </div>
 
             <!-- STEP 2 (写真2) -->
-            <div class="bg-white rounded-3xl border border-slate-200 overflow-hidden shadow-sm flex flex-col justify-between group hover:border-sports-brand transition-all duration-300 transform hover:-translate-y-1">
-                <div class="relative aspect-[4/3] bg-slate-900 flex items-center justify-center overflow-hidden">
-                    <img src="https://images.unsplash.com/photo-1506157786151-b8491531f063?q=80&w=600&auto=format&fit=crop" 
-                         alt="スリッパ履き替え＆通路案内" 
-                         class="absolute inset-0 w-full h-full object-cover opacity-65 group-hover:scale-105 transition-transform duration-500"
-                         onerror="this.style.display='none';">
-                    
-                    <div class="absolute inset-0 bg-slate-950/60 flex flex-col items-center justify-center p-4 text-center pointer-events-none">
-                        <div class="w-12 h-12 rounded-full bg-sports-brand text-white flex items-center justify-center mb-2 shadow-lg">
-                            <span class="font-extrabold text-lg">2</span>
-                        </div>
-                        <span class="text-[10px] text-slate-400 font-bold block tracking-wider">PHOTO 02</span>
-                        <p class="text-sm font-bold text-white mt-1">スリッパの履き替え＆廊下を左へ</p>
-                    </div>
-
-                    <div class="absolute top-3 left-3 bg-sports-brand text-white text-[10px] font-black px-2.5 py-1 rounded-full shadow">
-                        ステップ 2
-                    </div>
+            <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-4">
+                <span class="inline-block bg-sports-brand text-white text-xs font-bold px-2 py-1 rounded mb-3">ステップ 2</span>
+                <div class="aspect-[4/3] bg-slate-100 rounded-lg overflow-hidden mb-4 border border-slate-200">
+                    <img src="step_2.JPG" alt="STEP 2" class="w-full h-full object-cover">
                 </div>
-                <div class="p-6 flex-grow flex flex-col justify-between">
-                    <div>
-                        <h4 class="font-black text-slate-800 text-base mb-2">② 内履きに履き替え、廊下を左へ進む</h4>
-                        <p class="text-xs sm:text-sm text-slate-500 leading-relaxed">
-                            玄関で必ず外履きを脱ぎ、備え付けのスリッパ、またはご持参いただいた内履きに履き替えてください。そのまま廊下に出て「左側」へとお進みください。
-                        </p>
-                    </div>
-                    <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs text-sports-brand font-black">
-                        <span>※上靴・スリッパ着用必須</span>
-                        <i class="fa-solid fa-arrow-right"></i>
-                    </div>
-                </div>
+                <h4 class="font-bold text-slate-800 text-[15px] mb-2">② 50メートルほど道路を直進</h4>
+                <p class="text-xs text-slate-500">道なりに直進してください。</p>
             </div>
 
             <!-- STEP 3 (写真3) -->
-            <div class="bg-white rounded-3xl border border-slate-200 overflow-hidden shadow-sm flex flex-col justify-between group hover:border-sports-brand transition-all duration-300 transform hover:-translate-y-1">
-                <div class="relative aspect-[4/3] bg-slate-900 flex items-center justify-center overflow-hidden">
-                    <img src="https://images.unsplash.com/photo-1527661591475-527312dd65f5?q=80&w=600&auto=format&fit=crop" 
-                         alt="講堂トイレ入り口到着" 
-                         class="absolute inset-0 w-full h-full object-cover opacity-65 group-hover:scale-105 transition-transform duration-500"
-                         onerror="this.style.display='none';">
-                    
-                    <div class="absolute inset-0 bg-slate-950/60 flex flex-col items-center justify-center p-4 text-center pointer-events-none">
-                        <div class="w-12 h-12 rounded-full bg-sports-accent text-slate-950 flex items-center justify-center mb-2 shadow-lg">
-                            <span class="font-extrabold text-lg"><i class="fa-solid fa-check"></i></span>
-                        </div>
-                        <span class="text-[10px] text-slate-400 font-bold block tracking-wider">PHOTO 03</span>
-                        <p class="text-sm font-bold text-white mt-1">講堂（体育館）トイレ到着</p>
-                    </div>
-
-                    <div class="absolute top-3 left-3 bg-sports-accent text-slate-950 text-[10px] font-black px-2.5 py-1 rounded-full shadow">
-                        ゴール
-                    </div>
+            <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-4">
+                <span class="inline-block bg-sports-accent text-slate-900 text-xs font-bold px-2 py-1 rounded mb-3">ゴール</span>
+                <div class="aspect-[4/3] bg-slate-100 rounded-lg overflow-hidden mb-4 border border-slate-200">
+                    <img src="step_3.JPG" alt="STEP 3" class="w-full h-full object-cover">
                 </div>
-                <div class="p-6 flex-grow flex flex-col justify-between">
-                    <div>
-                        <h4 class="font-black text-slate-800 text-base mb-2">③ 突き当たりの講堂（体育館）内トイレに到着</h4>
-                        <p class="text-xs sm:text-sm text-slate-500 leading-relaxed">
-                            廊下の突き当たりにある講堂入口（自動扉）を入って、左手すぐに男女別水洗トイレ、および車椅子・ベビーカー対応の多目的トイレがございます。
-                        </p>
-                    </div>
-                    <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs text-sports-accent font-black">
-                        <span>場所：講堂内に入ってすぐ左手</span>
-                        <i class="fa-solid fa-circle-check"></i>
-                    </div>
-                </div>
+                <h4 class="font-bold text-slate-800 text-[15px] mb-2">③ ピーチクパーチク館トイレに到着</h4>
+                <p class="text-xs text-slate-500">ピーチクパーチク館入口を入ってすぐに男女別水洗トイレがございます。</p>
             </div>
 
         </div>
